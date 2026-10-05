@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f6f0">
+    <meta name="description" content="The portfolio and learning journey of Nitish Singh, a Computer Engineering student.">
+    <title>Nitish Singh — Student, maker &amp; curious mind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav-wrap container" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Nitish Singh, home">
+          <span class="brand-mark">N<span>.</span></span>
+          <span class="brand-name">nitish<span>singh</span></span>
+        </a>
+        <button class="menu-toggle icon-button" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-menu">
+          <svg class="icon menu-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon menu-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+        <div class="nav-menu" id="site-menu">
+          <a href="#about">About</a>
+          <a href="#journey">Journey</a>
+          <a href="#work">Work</a>
+          <a href="#toolbox">Toolbox</a>
+          <a class="nav-cta" href="#connect">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/></svg>
+          <svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m17.1-7.1-1.4 1.4M6.3 17.7l-1.4 1.4m14.2 0-1.4-1.4M6.3 6.3 4.9 4.9"/></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="hero-greeting">
+              <span class="profile-photo-frame">
+                <img class="profile-photo" src="profile.jpg" alt="Nitish Singh" fetchpriority="high">
+              </span>
+              <div>
+                <span class="greeting-label">HEY, I’M</span>
+                <strong>Nitish Singh</strong>
+                <span class="greeting-detail">Computer Engineering student</span>
+              </div>
+            </div>
+            <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING STUDENT <span class="eyebrow-divider">/</span> LEARNING BY BUILDING</p>
+            <h1 id="hero-title">Curious by nature.<br><span class="headline-accent">Building by doing.</span></h1>
+            <p class="hero-intro">I’m a first-semester Computer Engineering student who loves turning ideas into useful things on the web — and figuring out what to build next.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+              <a class="button button-quiet" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-footnote"><span class="mono">CURRENTLY</span><span>Learning C, exploring the web, and thinking in projects.</span></div>
+          </div>
+
+          <div class="hero-art" aria-label="A playful illustration of a desk and code editor">
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="float-label float-label-top"><span class="label-icon">&lt;/&gt;</span> making things</div>
+            <div class="float-label float-label-bottom"><span class="status-dot"></span> learning in public</div>
+            <div class="code-window">
+              <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>hello-world.c</span><span class="window-menu">•••</span></div>
+              <div class="code-content" aria-label="A short C program">
+                <span class="code-line"><i>01</i> <span class="code-purple">#include</span> <span class="code-green">&lt;stdio.h&gt;</span></span>
+                <span class="code-line"><i>02</i></span>
+                <span class="code-line"><i>03</i> <span class="code-purple">int</span> <span class="code-yellow">main</span>() {</span>
+                <span class="code-line"><i>04</i> &nbsp;&nbsp;<span class="code-purple">char</span> *mindset =</span>
+                <span class="code-line"><i>05</i> &nbsp;&nbsp;<span class="code-green">"learn, build, repeat"</span>;</span>
+                <span class="code-line"><i>06</i> &nbsp;&nbsp;<span class="code-yellow">printf</span>(<span class="code-green">"%s\n"</span>, mindset);</span>
+                <span class="code-line"><i>07</i> &nbsp;&nbsp;<span class="code-purple">return</span> <span class="code-orange">0</span>;</span>
+                <span class="code-line"><i>08</i> }</span>
+                <span class="code-line code-output"><i>↳</i> learn, build, repeat<span class="cursor-block" aria-hidden="true"></span></span>
+              </div>
+              <div class="window-status"><span><span class="status-dot"></span> ready to learn</span><span>UTF-8&nbsp;&nbsp; C</span></div>
+            </div>
+            <div class="hero-sticker" aria-hidden="true"><span>✳</span><small>IDEAS<br>IN PROGRESS</small></div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to about section"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="ticker" aria-label="Interests">
+        <div class="ticker-track" aria-hidden="true">
+          <span>WEB DEVELOPMENT</span><b>✳</b><span>C PROGRAMMING</span><b>✳</b><span>BUILDING FOR PEOPLE</span><b>✳</b><span>LEARNING BY BUILDING</span><b>✳</b><span>WEB DEVELOPMENT</span><b>✳</b><span>C PROGRAMMING</span><b>✳</b><span>BUILDING FOR PEOPLE</span><b>✳</b><span>LEARNING BY BUILDING</span><b>✳</b>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="section-index">01</span> THE PERSON BEHIND THE PIXELS</p>
+            <h2 id="about-title">A student with<br>a <span class="serif-accent">builder’s</span> mindset.</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="about-lead">I’m at the beginning of my Computer Engineering journey, building strong foundations and discovering what I can create with technology.</p>
+            <p>Right now, I’m studying C in class and strengthening my web foundations by making things outside it. I enjoy the moment a blank page becomes a working idea — even when the path there includes a few bugs.</p>
+            <p>I’ve explored turning an HTML expense tracker into an Android app with Capacitor, published projects with GitHub Pages, and learned my way around domains and DNS. There’s a lot more I want to discover, and that’s the fun part.</p>
+            <a class="text-link" href="#journey">More about my journey <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <div class="container fact-row reveal">
+          <div class="fact"><span class="fact-icon">⌘</span><div><strong>Learning in class</strong><span>C programming · first semester</span></div></div>
+          <div class="fact"><span class="fact-icon">↗</span><div><strong>Making on the web</strong><span>HTML · CSS · JavaScript</span></div></div>
+          <div class="fact"><span class="fact-icon">✳</span><div><strong>Driven by curiosity</strong><span>Always ready to learn</span></div></div>
+        </div>
+      </section>
+
+      <section class="journey section-pad" id="journey" aria-labelledby="journey-title">
+        <div class="container">
+          <div class="section-heading section-heading-center reveal">
+            <p class="eyebrow"><span class="section-index">02</span> ONE STEP AT A TIME</p>
+            <h2 id="journey-title">The journey <span class="serif-accent">so far.</span></h2>
+            <p class="section-subtitle">Not a finish line — just a snapshot of what I’ve learned and what I’m reaching for next.</p>
+          </div>
+          <div class="journey-track">
+            <article class="journey-card reveal">
+              <span class="journey-marker">01</span>
+              <p class="card-kicker">THE FOUNDATION</p>
+              <h3>Curiosity meets code</h3>
+              <p>Started learning how websites are shaped with HTML and CSS, then added JavaScript to give them a little life.</p>
+              <div class="journey-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <span class="journey-state"><i></i> BUILDING ON IT</span>
+            </article>
+            <article class="journey-card reveal">
+              <span class="journey-marker">02</span>
+              <p class="card-kicker">RIGHT NOW</p>
+              <h3>Engineering fundamentals</h3>
+              <p>First-semester Computer Engineering student. Working through C programming and learning to think carefully about how software works.</p>
+              <div class="journey-tags"><span>C</span><span>Problem solving</span><span>Foundations</span></div>
+              <span class="journey-state"><i></i> IN PROGRESS</span>
+            </article>
+            <article class="journey-card reveal">
+              <span class="journey-marker">03</span>
+              <p class="card-kicker">UP NEXT</p>
+              <h3>More tools, more ideas</h3>
+              <p>Exploring C++, Linux, modern web development, Android development, and the tools that help teams build together.</p>
+              <div class="journey-tags"><span>C++</span><span>Linux</span><span>Android</span></div>
+              <span class="journey-state"><i></i> ON THE HORIZON</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section-pad" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="work-top reveal">
+            <div class="section-heading">
+              <p class="eyebrow"><span class="section-index">03</span> SMALL IDEAS, REAL LEARNING</p>
+              <h2 id="work-title">Things I’ve <span class="serif-accent">made &amp; imagined.</span></h2>
+            </div>
+            <p class="work-intro">A few experiments and concepts from my learning journey. Some are hands-on explorations; others are ideas I’d love to take further.</p>
+          </div>
+          <div class="project-controls" role="group" aria-label="Filter projects">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Everything <span>04</span></button>
+            <button class="filter-chip" type="button" data-filter="built" aria-pressed="false">Hands-on <span>01</span></button>
+            <button class="filter-chip" type="button" data-filter="concept" aria-pressed="false">Concepts <span>03</span></button>
+            <span class="filter-note" id="filter-status" aria-live="polite">Showing all 4 ideas</span>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured reveal" data-category="built">
+              <div class="project-art expense-art">
+                <span class="art-label">WEB APP → ANDROID EXPLORATION</span>
+                <div class="expense-ui" aria-hidden="true">
+                  <div class="expense-ui-head"><span>my wallet</span><span>•••</span></div>
+                  <small>THIS MONTH</small><strong>Rs. 24,580</strong>
+                  <div class="expense-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="expense-ui-bottom"><span>▣&nbsp; Overview</span><span>＋&nbsp; Add expense</span></div>
+                </div>
+                <span class="art-spark" aria-hidden="true">✳</span>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>01 / HANDS-ON</span><span>WEB · CAPACITOR</span></div>
+                <h3>An expense tracker, reimagined</h3>
+                <p>Explored turning an HTML-based expense-tracking website into an Android app using Capacitor. A practical way to learn how web skills can travel beyond the browser.</p>
+                <div class="project-footer"><div class="project-tags"><span>HTML</span><span>Capacitor</span><span>Android</span></div><span class="project-arrow" aria-label="Exploration project">↗</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="concept">
+              <div class="project-art rental-art">
+                <span class="art-label">A CONCEPT FOR EVERYDAY LIVING</span>
+                <div class="mini-window rental-window" aria-hidden="true"><div class="mini-window-top"><i></i><i></i><i></i><span>find a place</span></div><div class="rental-photo"><span>Find your next place</span></div><div class="rental-lines"><b></b><i></i><i></i></div><div class="rental-bottom"><span>2 beds · Available now</span><strong>♡</strong></div></div>
+                <span class="art-stamp">ROOM<br>TO GROW</span>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>02 / CONCEPT</span><span>WEB DESIGN</span></div>
+                <h3>A friendlier way to find a room</h3>
+                <p>A room-rental website idea shaped around making local listings easier to browse, compare, and understand.</p>
+                <div class="project-footer"><div class="project-tags"><span>Product thinking</span><span>Web</span></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="concept">
+              <div class="project-art food-art">
+                <span class="art-label">A LITTLE IDEA WITH BIG APPETITE</span>
+                <div class="food-phone" aria-hidden="true"><div class="phone-notch"></div><span class="food-welcome">Hungry?</span><span class="food-sub">Good food, close by.</span><div class="food-dish">🍜</div><div class="food-item"><b></b><i></i></div><div class="food-item"><b></b><i></i></div></div>
+                <span class="food-spark" aria-hidden="true">✦</span>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>03 / CONCEPT</span><span>FOOD · COMMUNITY</span></div>
+                <h3>Local food, a few taps away</h3>
+                <p>A food-delivery concept exploring how a simple digital experience could connect people with nearby meals.</p>
+                <div class="project-footer"><div class="project-tags"><span>Mobile-first</span><span>JavaScript</span></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              </div>
+            </article>
+            <article class="project-card reveal" data-category="concept">
+              <div class="project-art portfolio-art">
+                <span class="art-label">THE SPACE YOU’RE IN RIGHT NOW</span>
+                <div class="portfolio-shapes" aria-hidden="true"><span class="portfolio-big">N<span>.</span></span><span class="portfolio-orbit"></span><span class="portfolio-chip">A WORK IN<br>PROGRESS</span></div>
+                <span class="portfolio-coordinate">28°12' N<br>83°59' E</span>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>04 / ONGOING</span><span>PERSONAL SITE</span></div>
+                <h3>A home for my learning journey</h3>
+                <p>This portfolio brings my background, interests, and early project ideas together in one place — and will keep growing as I do.</p>
+                <div class="project-footer"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              </div>
+            </article>
+          </div>
+          <p class="project-disclaimer"><span>✳</span> Early-stage projects are labeled as concepts — every great build starts as an idea.</p>
+        </div>
+      </section>
+
+      <section class="toolbox section-pad" id="toolbox" aria-labelledby="toolbox-title">
+        <div class="container toolbox-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="section-index">04</span> MY CURRENT TOOLBOX</p>
+            <h2 id="toolbox-title">What I know.<br>What I’m <span class="serif-accent">learning.</span></h2>
+            <p class="toolbox-description">Skills grow with practice. Here’s an honest snapshot — not a scorecard, just where I am today.</p>
+            <div class="skill-legend"><span><i class="legend-solid"></i> Comfortable using</span><span><i class="legend-outline"></i> Learning / exploring</span></div>
+          </div>
+          <div class="skill-groups reveal">
+            <div class="skill-group">
+              <div class="skill-group-heading"><span>01</span><h3>Making for the web</h3></div>
+              <div class="skill-list">
+                <div class="skill-item"><div><strong>HTML</strong><span>Page structure &amp; semantics</span></div><span class="skill-level level-solid">COMFORTABLE</span></div>
+                <div class="skill-item"><div><strong>CSS</strong><span>Styles, layouts &amp; responsive design</span></div><span class="skill-level level-solid">COMFORTABLE</span></div>
+                <div class="skill-item"><div><strong>JavaScript</strong><span>Interactivity &amp; web fundamentals</span></div><span class="skill-level level-solid">COMFORTABLE</span></div>
+              </div>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-heading"><span>02</span><h3>Growing my foundations</h3></div>
+              <div class="skill-list">
+                <div class="skill-item"><div><strong>C programming</strong><span>First-semester coursework</span></div><span class="skill-level level-learning">LEARNING</span></div>
+                <div class="skill-item"><div><strong>GitHub &amp; GitHub Pages</strong><span>Sharing and publishing projects</span></div><span class="skill-level level-learning">EXPLORING</span></div>
+                <div class="skill-item"><div><strong>Capacitor &amp; Android</strong><span>Bringing web projects to mobile</span></div><span class="skill-level level-learning">EXPLORING</span></div>
+                <div class="skill-item"><div><strong>C++ &amp; Linux</strong><span>Tools and topics on my learning list</span></div><span class="skill-level level-next">UP NEXT</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests section-pad" aria-labelledby="interests-title">
+        <div class="container interests-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="section-index">05</span> ALWAYS ASKING “WHAT IF?”</p>
+            <h2 id="interests-title">Things I’m <span class="serif-accent">looking forward to.</span></h2>
+          </div>
+          <div class="interest-list reveal">
+            <div class="interest-row"><span class="interest-number">01</span><span class="interest-title">Modern web development</span><span class="interest-note">Build better for the browser</span><span class="interest-arrow">↗</span></div>
+            <div class="interest-row"><span class="interest-number">02</span><span class="interest-title">Android development</span><span class="interest-note">Take ideas into people’s hands</span><span class="interest-arrow">↗</span></div>
+            <div class="interest-row"><span class="interest-number">03</span><span class="interest-title">Linux &amp; open source</span><span class="interest-note">Learn by exploring and contributing</span><span class="interest-arrow">↗</span></div>
+            <div class="interest-row"><span class="interest-number">04</span><span class="interest-title">Working with a team</span><span class="interest-note">Grow through collaboration</span><span class="interest-arrow">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect section-pad" id="connect" aria-labelledby="connect-title">
+        <div class="container connect-card reveal">
+          <div class="connect-decoration" aria-hidden="true"><span class="connect-star">✳</span><span class="connect-orbit"></span></div>
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING &amp; GOOD CONVERSATIONS</p>
+          <h2 id="connect-title">Have an idea?<br><span class="serif-accent">Let’s figure it out.</span></h2>
+          <p class="connect-copy">I’m always glad to meet fellow learners, hear about interesting projects, and swap ideas. Find me through my personal site.</p>
+          <div class="connect-actions">
+            <button class="button button-primary copy-link-button" type="button" id="copy-site"><span class="copy-label">Copy my website link</span><span aria-hidden="true">↗</span></button>
+            <span class="site-address">nitishsingh0.com.np</span>
+          </div>
+          <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#top" aria-label="Back to top"><span class="brand-mark">N<span>.</span></span></a>
+        <p>Made with curiosity and a love of learning. <span aria-hidden="true">✳</span></p>
+        <div class="footer-right"><span>© <span id="current-year"></span> Nitish Singh</span><a href="#top">Back to top ↑</a></div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+  </body>
+</html>
